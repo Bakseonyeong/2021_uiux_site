@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* header#header{background: lightyellow;} */
+
+.top{background: #0044AF;}
+/* header#header .top{background: #0044AF;} */
+.tmenu{
+    width: 1200px; height: 40px; _background: #eee; margin: 0 auto;
+    position: relative;
+}
+/* .tmenu li{float: left;} */
+.leftme li{float: left;}
+.leftme li a{
+    width: 120px;  background-color: #00163B; font-size: 16px;
+    color: #fff; border-right: 2px solid #0044AF;
+    display: block; text-align: center; line-height: 40px;
+}
+.leftme li a:hover{background-color: #ddd; color: #000; height: 40px;}
+.leftme .active a{background-color: #fff !important; color: #000; height: 40px;
+     /* border-bottom: 1px solid #fff; */
+}
+
+.rightme li{float: left;}
+.rightme{float: right; position: absolute; right: 0; top: 7px;}
+.rightme li a{
+    top: -40px; display: block; padding: 5px 10px; color: #fff; font-size: 13px;
+}
+
+
+/* _____________ */
+
+
+.main{width: 1200px; height: 117px; position: relative;}
+.main li{float: left;}
+.main .mmenu a{display: block; margin-left:47px; font-size: 20px;}
+/* .main .mmenu a{display: block; padding:0 23px; font-size: 20px;} */
+/* .main .mmenu{float: right;} */
+.main ul{position: absolute; right: 0; top: 45px;}
+/* .main .poa{position: relative;} */
+
+/* .main .logo{position: relative;} */
+.main .logo img{position: absolute; left: 0; top: 35px;}
+
+/* ______header______ */
+
+
+
+.visual{background-color: lightyellow;}
+
+
+
+
+
+.m10{margin-bottom: 30px;}
+.ml-15{margin-left: -15px; margin-top: 1px;}
+
+
+

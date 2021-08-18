@@ -4,4 +4,4 @@
 li{list-style: none;}
 .clearfix::after{content:"";clear: both;display: block;}
 a:link,a:visited{text-decoration: none;color:black;}
-img{display: block;}
+/* img{display: block;} */
