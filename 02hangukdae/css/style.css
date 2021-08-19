@@ -127,7 +127,6 @@ margin-bottom: 45px;}
     position: absolute; display: block;
     width: 170px; line-height: 40px; font-size: 15px;
     text-align: center; background: #1A2E4F;color:#fff;
-    
 }
 
 .venner>ul>li:nth-child(2){height: 450px; background-image: url(../images/배경03_yell.jpg); background-position: -230px -50px;}
