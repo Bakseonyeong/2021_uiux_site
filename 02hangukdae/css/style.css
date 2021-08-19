@@ -1,8 +1,14 @@
 @charset "utf-8";
 
+
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 /* header#header{background: lightyellow;} */
 
-.top{background: #0044AF;}
+.top{background: #0044AF; min-width: 1200px;}
 /* header#header .top{background: #0044AF;} */
 .tmenu{
     width: 1200px; height: 40px; _background: #eee; margin: 0 auto;
@@ -12,7 +18,7 @@
 .leftme li{float: left;}
 .leftme li a{
     width: 120px;  background-color: #00163B; font-size: 16px;
-    color: #fff; border-right: 2px solid #0044AF;
+    color: #fff; border-right: 2px solid #0044AF; float: left;
     display: block; text-align: center; line-height: 40px;
 }
 .leftme li a:hover{background-color: #ddd; color: #000; height: 40px;}
@@ -24,6 +30,12 @@
 .rightme{float: right; position: absolute; right: 0; top: 7px;}
 .rightme li a{
     top: -40px; display: block; padding: 5px 10px; color: #fff; font-size: 13px;
+}
+
+.rightme li:nth-child(2) a{
+    float: left; background-color: #fff; color: #000; line-height: 18px;
+    width: 20px; padding: 0; text-align: center; border: 1px solid #555;
+    margin-right: 4px; margin-top: 2px;
 }
 
 
@@ -45,14 +57,104 @@
 
 
 
-.visual{background-color: lightyellow;}
+.contents{
+    height: 1300px;
+    min-width: 1200px; _background-color: gray; padding-top: 80px;
+    background-image: url(../images/patton.png), url(../images/배경01_jp.jpg);
+    background-repeat: repeat, no-repeat;
+    background-position: center;
+    background-size: auto, cover;
+}
+
+
+.visual{_background-color: lightyellow; width: 1200px; height: 136px;position: relative;
+margin-bottom: 45px;}
+
+
+.vtext h2{
+    font-size: 49px; top: -6px; position: absolute; letter-spacing: -3px; color: #fff; 
+}
+.vtext h1{
+    font-size: 74px; letter-spacing: -5px; top: 58px; 
+    position: absolute; word-spacing: -18px; color: #fff;
+}
+
+
+/* .visual .vicon>ul>li{float: left;} */
+.visual .vicon li{float: left;}
+
+.visual .vicon{position: absolute;right: 0; top: 1px;}
+.visual .vicon a{
+    padding: 0; text-align: center;margin-left: 18px;
+    display: block; color: #fff;
+}
+
+.visual .vicon img{padding-bottom: 5px;}
+
+
+
+
+
+.venner{width: 1200px; margin: 0 auto;}
+.venner>ul>li{float: left; width: 25%; height: 225px; background-color: #fff;}
+
+/* .venner>ul>li:nth-child(1) h1{
+    position: absolute; top: 0px;padding: 86px; font-size: 71px;
+    line-height: 78px;
+}
+.venner>ul>li:nth-child(1) a{
+    position: absolute; top: 340px;margin-left: 86px; 
+    
+} */
+/* .venner li>ul>li:nth-child(1)>img{width: 900px; height: 450px;}
+.venner li>ul>li:nth-child(8) img{width: 900px; height: 225px; overflow: hidden;} */
+.venner .bx-wrapper {
+    margin: 0 auto; padding: 0;
+    -moz-box-shadow: 0 0 0 #ccc;
+    -webkit-box-shadow: 0 0 0 #ccc;
+    box-shadow: 0 0 0 #ccc;
+    border: 0 solid #fff;
+    background: none;
+}
+
+.venner>ul>li:nth-child(2n){background: pink;}
+.venner>ul>li:nth-child(3n){background: yellow;}
+
+.venner>ul>li:nth-child(1){width: 75%; height: 450px; overflow: hidden;}
+.venner>ul>li:nth-child(1) .vftext{position: absolute; top: 60px; left: 86px;}
+.venner>ul>li:nth-child(1) .vftext h1{font-size: 68px;line-height: 83px;color: #0044af;margin-bottom:20px;}
+.venner>ul>li:nth-child(1) .vftext a{
+    position: absolute; display: block;
+    width: 170px; line-height: 40px; font-size: 15px;
+    text-align: center; background: #1A2E4F;color:#fff;
+    
+}
+
+.venner>ul>li:nth-child(2){height: 450px; background-image: url(../images/배경03_yell.jpg); background-position: -230px -50px;}
+.venner>ul>li:nth-child(3){background-color: #00163B;}
+.venner>ul>li:nth-child(4){
+    background-color: #1651B7;
+    background-image: url(../images/rogo.png);
+    background-repeat: no-repeat;
+    background-position: 135px 50px; background-size: 250%;
+    background-blend-mode:difference;
+    
+}
+.venner>ul>li:nth-child(5){}
+.venner>ul>li:nth-child(6){background-image: url(../images/학교02.jpg); background-position: -140px -50px;}
+.venner>ul>li:nth-child(7){}
+.venner>ul>li:nth-child(8){width: 75%; height: 225px;}
+
 
 
 
 
 
 .m10{margin-bottom: 30px;}
-.ml-15{margin-left: -15px; margin-top: 1px;}
+.ml-15{margin-left: -15px; /* margin-top: 1px; */}
+.ml15{margin-left: 15px !important; /* margin-top: 1px; */}
+
+
 
 
 
