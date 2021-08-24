@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-
-
 body{
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -60,7 +58,7 @@ body{
 .contents{
     height: 1300px;
     min-width: 1200px; _background-color: gray; padding-top: 80px;
-    background-image: url(../images/patton.png), url(../images/배경01_jp.jpg);
+    background-image: url(../images/patton.png), url(../images/back01_jp.jpg);
     background-repeat: repeat, no-repeat;
     background-position: center;
     background-size: auto, cover;
@@ -129,20 +127,71 @@ margin-bottom: 45px;}
     text-align: center; background: #1A2E4F;color:#fff;
 }
 
-.venner>ul>li:nth-child(2){height: 450px; background-image: url(../images/배경03_yell.jpg); background-position: -230px -50px;}
-.venner>ul>li:nth-child(3){background-color: #00163B;}
-.venner>ul>li:nth-child(4){
-    background-color: #1651B7;
-    background-image: url(../images/rogo.png);
-    background-repeat: no-repeat;
-    background-position: 135px 50px; background-size: 250%;
-    background-blend-mode:difference;
-    
+.venner>ul>li:nth-child(2){height: 450px; background: url(../images/ba03_yell.jpg), rgba(0, 0, 0, 0.5); background-position: -230px -50px; position: relative;}
+
+.venner>ul>li:nth-child(2) .vstext{position: absolute; top: 60px; left: 27px; color: #fff;}
+.venner>ul>li:nth-child(2) .vstext h2{font-size: 40px; margin-bottom: 20px;}
+.venner>ul>li:nth-child(2) .vstext p{
+    font-size: 19px;line-height: 28px;
 }
+.venner>ul>li:nth-child(2) .vstext a{
+    position: absolute; display: block;
+    width: 170px; line-height: 40px; font-size: 15px;
+    text-align: center; background: rgba(20, 10, 0, 0.5);
+    color: #fff; border: 1px solid #fff;
+}
+
+
+.venner>ul>li:nth-child(3){background-color: #00163B;}
+.venner>ul>li:nth-child(3) .venwr li{float: left;}
+.venner>ul>li:nth-child(3) .venwr h3{
+    padding: 20px 0px 30px 20px; color: #fff; font-size: 23px;
+}
+.venner>ul>li:nth-child(3) .venwr img{padding-bottom: 2px;}
+.venner>ul>li:nth-child(3) .venwr{position: absolute;}
+.venner>ul>li:nth-child(3) .venwr a{
+    padding: 0; text-align: center; margin-left: 5px;
+    display: block; color: #fff; font-size: 15px;
+    line-height: 25px; margin-left: 28px;
+}
+.venner>ul>li:nth-child(3) .venwr {}
+
+
+
+
+.venner>ul>li:nth-child(4){
+    position: relative; color: #fff;
+    background: #1651B7; overflow: hidden;
+    /* background-repeat: no-repeat; */
+}
+.venner>ul>li:nth-child(4) img{
+    position: absolute; left: 135px; top: 50px; width: 750px;
+        opacity: 0.2; overflow: hidden;
+}
+.venner>ul>li:nth-child(4) h5{font-size: 23px; padding: 20px 0px 30px 20px; color: #fff;}
+.venner>ul>li:nth-child(4) .line{width: 260px; height: 2px; background: #fff; position: absolute; left: 20px;top: 66px;}
+.venner>ul>li:nth-child(4) li{float: left;}
+.venner>ul>li:nth-child(4) {}
+.venner>ul>li:nth-child(4) {}
+
+
+
 .venner>ul>li:nth-child(5){}
-.venner>ul>li:nth-child(6){background-image: url(../images/학교02.jpg); background-position: -140px -50px;}
-.venner>ul>li:nth-child(7){}
-.venner>ul>li:nth-child(8){width: 75%; height: 225px;}
+.venner>ul>li:nth-child(5) li{float: left;}
+
+
+.venner>ul>li:nth-child(6){background-image: url(../images/sch02.jpg); background-position: -140px -50px;}
+.venner>ul>li:nth-child(7){background-image: url(../images/sch03_blue.jpg); background-position: -250px -80px;}
+.venner>ul>li:nth-child(8){width: 75%; height: 225px; color: #fff;}
+
+
+
+.bot{background: #ddd; height: 100px;}
+
+
+
+
+.footer{width: 1000px; height: 200px; background: #fff;}
 
 
 
