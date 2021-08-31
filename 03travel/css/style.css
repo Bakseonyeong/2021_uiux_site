@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 15px;
+}
+
+.head{background: #ccc;}
+.top{height: 90px; background: #076AA5 url(../images/topbg.jpg) no-repeat center;}
+.tbar{
+    width: 980px; 
+}
+
+
+
+
+
+
+.m30{margin-bottom: 30px;}
+.ml-15{margin-left: -15px; /* margin-top: 1px; */}
+.ml15{margin-left: 15px !important; /* margin-top: 1px; */}
+.ml5{margin-left: 5px !important;}
+.mr15{margin-right: 15px !important;}
+.mb20{margin-bottom: 20px !important;}
+.ml100{margin-left: 125px !important;}
+
+
+
+
+
