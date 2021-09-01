@@ -5,13 +5,87 @@ body{
     font-size: 15px;
 }
 
+/* header */
 .head{background: #ccc;}
 .top{height: 90px; background: #076AA5 url(../images/topbg.jpg) no-repeat center;}
+.twidth{}
 .tbar{
-    width: 980px; 
+    width: 980px; height: 90px; position: relative; _background: #000;
+    display: flex; justify-content:space-between; align-items: center;
+    margin: 0 auto;
+}
+
+.tbar h1{
+    width: 146px;height: 50px; _background: skyblue;
+    /* display: flex; justify-content:center; align-items: center; */
+}
+
+.tbar .search{
+    width: 290px;height: 30px; background: white;
+    /* display: flex; justify-content:center; align-items: center; */
+    position: relative; border-radius: 15px; margin-left: 69px;
+}
+.tbar .search .seTit{
+    background: url(../images/searchtext.jpg);
+    position: absolute; left: 10px; top: 6px;
+    text-indent: -9999px; width: 60px; height: 20px;
+    cursor: pointer;
+}
+.tbar .search .seText{
+    border: 0; position: absolute; left: 80px;top: 8px;
+}
+.tbar .search .seSeb{
+    border: 0; position: absolute; right: 15px; top: 5px;
+    width: 20px;height: 20px; text-indent: -9999px;
+    background: url(../images/search.jpg) no-repeat;
+    cursor: pointer;
 }
 
 
+.tbar .snslogo{
+    width: 345px;height: 24px; _background: skyblue;
+    /* display: flex; justify-content:center; align-items: center; */
+    position: relative;
+}
+.tbar .snslogo h2{
+    left: 0; top: -4px; position: absolute; color: #fff;
+    font-size: 28px; letter-spacing: -1px;
+}
+.tbar .snslogo ul{right: 0; top: 0; position: absolute;}
+.tbar li{float: left; padding-left: 6px;}
+
+
+.tmenu{
+    background: linear-gradient(to top, #eaeaea, #fff);
+}
+.tmenu .menubar{
+    width: 980px; height: 59px; margin: 0 auto;
+}
+.tmenu .menubar li{
+    float: left; width: 163.3px; height: 60px; border-left:2px solid #E8E8E8;
+}
+.tmenu .menubar li:last-child{
+    border-right: 1px solid #E8E8E8;
+}
+.tmenu .menubar li p{
+    font-size: 19px; display: block;text-align: center; line-height: 65px; font-weight: 600;
+    
+}
+.tmenu .menubar li {}
+.tmenu .line{
+    height: 5px; background: #0E73A7; position: relative;
+}
+
+/* content */
+.conbg{
+    height: 1236px; min-width: 1600px;
+    /* height: 100vh; min-width: 1600px; */
+    background-image: url(../images/conbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
 
 
 
