@@ -26,7 +26,7 @@
             <div class="twidth">
                 <div class="tbar">
                     <h1 class="logo">
-                        <img src="images/logo.png" alt="">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
                     </h1>
                     <div class="search">
                         <form action="#" method="post">
@@ -63,7 +63,7 @@
             <div class="menubar">
                 <ul class="clearfix">
                     <li>
-                        <a href="#"><p>여행도시</p></a>
+                        <a href="citytour.html"><p>여행도시</p></a>
                     </li>
                     <li>
                         <a href="#"><p>호텔예약</p></a>
@@ -77,7 +77,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"><p>회사소개</p></a>
+                        <a href="company.html"><p>회사소개</p></a>
                     </li>
                     <li>
                         <a href="#"><p>커뮤니티</p></a>
@@ -97,45 +97,121 @@
     <div class="conbg">
         <!-- content main -->
         <div class="cmain">
-            <div class="mainlt">
-                <div class="mainlent">
-                    <ul>
-                        <li>
-                            <img src="images/plane.png" alt="">
-                            <p>공항예약</p>
-                        </li>
-                        <li>
-                            <img src="images/mouse.png" alt="">
-                            <p>호텔예약</p>
-                        </li>
-                        <li>
-                            <img src="images/car.png" alt="">
-                            <p>렌트카</p>
-                        </li>
-                        <li>
-                            <img src="images/bag.png" alt="">
-                            <p>휴양지</p>
-                        </li>
-                    </ul>
 
-                    <ul>
-                        <li>
-                            <div class="nation">
-                                <form action="#" method="post">
-                                    <label for="nation" class="naTit">가고싶은 나라를 선택하세요.</label>
-                                    <input type="text" id="nation" placeholder="선택하세요." class="naText">
-                                    <input type="submit" value="sub" class="nasub">
-                                </form>
-                            </div>
+            <div class="mainle">
 
-                        </li>
-                    </ul>
+                <div class="slide">
+                    <!-- 페이지당기기 -->
+<div class="bxPager">
+    <!-- 페이저메뉴 -->
+    <ul>
+        <li>
+            <a href="#" data-slide-index="0">
+                <img src="images/plane.png" alt="">
+                <p>공항예약</p>
+            </a>
+        </li>
+        <li>
+            <a href="#" data-slide-index="0">
+                <img src="images/mouse.png" alt="">
+                <p>호텔예약</p>
+            </a>
+        </li>
+        <li>
+            <a href="#" data-slide-index="0">
+                <img src="images/car.png" alt="">
+                <p>렌트카</p>
+            </a>
+        </li>
+        <li>
+            <a href="#" data-slide-index="0">
+                <img src="images/bag.png" alt="">
+                <p>휴양지</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="mainsli">
+    <div class="slidecon">
+        <ul class="slider">
+
+            <!-- 공항예약 -->
+            <li>
+                <form action="#" class="form">
+                    <fieldset>
+                        <legend class="blind">여행일정</legend>
+                        <ul>
+                            <li>
+                                <label for="nation" class="naTit">가고싶은 나라를 선택하세요.</label>
+                                <select name="nation" id="nation">
+                                    <option value="">선택하세요</option>
+                                    <option value="미국">미국</option>
+                                    <option value="프랑스">프랑스</option>
+                                    <option value="베트남">베트남</option>
+                                    <option value="일본">일본</option>
+                                    <option value="중국">중국</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <label for="sdate">출발일</label>
+                                    <input type="date" id="sdate">
+                                </div>
+                                <div class="right">
+                                    <label for="edate">도착일</label>
+                                    <input type="date" id="edate">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <label for="grade">좌석등급</label>
+                                    <select name="grade" id="grade">
+                                        <option value="">선택</option>
+                                        <option value="이코노미">이코노미</option>
+                                        <option value="비지니스">비지니스</option>
+                                        <option value="퍼스트">퍼스트</option>
+                                    </select>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li>
+                                            <div class="left">
+                                                <label for="num1">성인</label>
+                                                <input type="number" id="num1" placeholder="0">
+                                            </div>
+                                            <div class="right">
+                                                <label for="num2">아이</label>
+                                                <input type="number" id="num2" placeholder="0">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="submit" value="예약하기">
+                </form>
+            </li>
+
+            <!-- 호텔예약 -->
+            <!-- 렌트카 -->
+            <!-- 휴양지 -->
+        </ul>
+    </div>
+</div>
+                    <!-- 페이지당기기 -->
+                </div>
+
+                <div class="mainven">
+
                 </div>
 
             </div>
 
-            <div class="mainr">
-
+            <div class="mainri">
+                <h1>TRAVEL GO</h1>
+                <h2>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</h2>
             </div>
             
         </div>
@@ -155,7 +231,7 @@
 
         <!-- footer -->
         <div class="footer">
-
+            <address>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, ad!</address>
         </div>
         
     </div>

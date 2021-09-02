@@ -6,6 +6,10 @@ body{
 }
 
 /* header */
+.act{
+    background: #ddd; font-weight:900;
+}
+
 .head{background: #ccc;}
 .top{height: 90px; background: #076AA5 url(../images/topbg.jpg) no-repeat center;}
 .twidth{}
@@ -87,6 +91,74 @@ body{
 
 }
 
+.cmain{
+    width: 980px;height: 557px; 
+    margin: 0 auto;
+    background: yellowgreen;
+}
+
+.cmain .mainle{
+    background: lightblue; float: left;
+    width: 482px; height: 557px;
+    
+}
+.cmain .mainle .slide{
+    width: 482px; height: 300px;
+    background: lightgray;
+}
+.cmain .mainle .slide .bxPager{
+    float: left;
+}
+.cmain .mainle .slide .mainsli{
+float: right;
+}
+
+
+.cmain .mainri{
+    background:cornflowerblue; float: right;
+    width: 482px; height: 557px;
+}
+
+
+
+
+/* subp-company */
+.subbg .subimg{
+    height: 200px;
+    _background: skyblue;
+    display: flex; justify-content: center;align-items: center;
+}
+.subbg .submaintit{
+    text-align: center;
+}
+.subbg .submaintit h3{font-size: 2em;}
+.subbg .submaintit h3:after{
+    content: ""; display: block; 
+    width: 80%; height: 2px; background: #000;
+    margin: 10px auto;
+}
+.subbg.company .subimg{
+    background-image: url(../images/subimg01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    .subbg.company .subcont{
+        width: 980px; margin: 0 auto; padding: 30px 0;
+    }
+.subbg.company .subsec{
+    border: 1px solid #555; 
+}
+
+
+
+
+
+.subbg.citytour .subimg{
+    background-image: url(../images/subimg02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 
@@ -97,7 +169,7 @@ body{
 .mr15{margin-right: 15px !important;}
 .mb20{margin-bottom: 20px !important;}
 .ml100{margin-left: 125px !important;}
-
+.blind{display: none;}
 
 
 
