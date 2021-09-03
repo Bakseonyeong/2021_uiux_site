@@ -17,6 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
 
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                pagerCustom:'.bxPager',
+                mode:'vertical',
+                touchEnabled: false
+            });
+
+        });
+    </script>
+
 
 </head>
 <body>
@@ -107,25 +118,29 @@
     <ul>
         <li>
             <a href="#" data-slide-index="0">
-                <img src="images/plane.png" alt="">
+                <img src="images/planew.png" alt="" class="unact">
+                <img src="images/planeb.png" alt="" class="act">
                 <p>공항예약</p>
             </a>
         </li>
         <li>
-            <a href="#" data-slide-index="0">
-                <img src="images/mouse.png" alt="">
+            <a href="#" data-slide-index="1">
+                <img src="images/mousew.png" alt="" class="unact">
+                <img src="images/mouseb.png" alt="" class="act">
                 <p>호텔예약</p>
             </a>
         </li>
         <li>
-            <a href="#" data-slide-index="0">
-                <img src="images/car.png" alt="">
+            <a href="#" data-slide-index="2">
+                <img src="images/carw.png" alt="" class="unact">
+                <img src="images/carb.png" alt="" class="act">
                 <p>렌트카</p>
             </a>
         </li>
         <li>
-            <a href="#" data-slide-index="0">
-                <img src="images/bag.png" alt="">
+            <a href="#" data-slide-index="3">
+                <img src="images/bagw.png" alt="" class="unact">
+                <img src="images/bagb.png" alt="" class="act">
                 <p>휴양지</p>
             </a>
         </li>
@@ -137,7 +152,7 @@
         <ul class="slider">
 
             <!-- 공항예약 -->
-            <li>
+            <li class="list">
                 <form action="#" class="form">
                     <fieldset>
                         <legend class="blind">여행일정</legend>
@@ -193,10 +208,64 @@
                     <input type="submit" value="예약하기">
                 </form>
             </li>
-
+            
             <!-- 호텔예약 -->
+            <li>
+                <form action="#" class="form">
+                    <fieldset>
+                        <legend class="blind">여행일정</legend>
+                        <ul>
+                            <li>
+                                <label for="nation" class="naTit">가고싶은 나라를 선택하세요.</label>
+                                <select name="nation" id="nation">
+                                    <option value="">선택하세요</option>
+                                    <option value="미국">미국</option>
+                                    <option value="프랑스">프랑스</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="submit" value="예약하기">
+                </form>
+            </li>
             <!-- 렌트카 -->
+            <li>
+                <form action="#" class="form">
+                    <fieldset>
+                        <legend class="blind">여행일정</legend>
+                        <ul>
+                            <li>
+                                <label for="nation" class="naTit">가고싶은 나라를 선택하세요.</label>
+                                <select name="nation" id="nation">
+                                    <option value="">선택하세요</option>
+                                    <option value="미국">미국</option>
+                                    <option value="프랑스">프랑스</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="submit" value="예약하기">
+                </form>
+            </li>
             <!-- 휴양지 -->
+            <li>
+                <form action="#" class="form">
+                    <fieldset>
+                        <legend class="blind">여행일정</legend>
+                        <ul>
+                            <li>
+                                <label for="nation" class="naTit">가고싶은 나라를 선택하세요.</label>
+                                <select name="nation" id="nation">
+                                    <option value="">선택하세요</option>
+                                    <option value="미국">미국</option>
+                                    <option value="프랑스">프랑스</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="submit" value="예약하기">
+                </form>
+            </li>
         </ul>
     </div>
 </div>

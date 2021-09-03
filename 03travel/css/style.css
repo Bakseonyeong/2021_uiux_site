@@ -5,14 +5,21 @@ body{
     font-size: 15px;
 }
 
-/* header */
-.act{
-    background: #ddd; font-weight:900;
+.bx-wrapper {
+    -moz-box-shadow: 0 none;
+    -webkit-box-shadow: 0 none;
+    box-shadow: none !important;
 }
 
-.head{background: #ccc;}
+
+/* header */
+.act{
+    _background: #ddd; font-weight:900;
+}
+
+.head{_background: #ccc;}
 .top{height: 90px; background: #076AA5 url(../images/topbg.jpg) no-repeat center;}
-.twidth{}
+/* .twidth{} */
 .tbar{
     width: 980px; height: 90px; position: relative; _background: #000;
     display: flex; justify-content:space-between; align-items: center;
@@ -75,20 +82,22 @@ body{
     font-size: 19px; display: block;text-align: center; line-height: 65px; font-weight: 600;
     
 }
-.tmenu .menubar li {}
+/* .tmenu .menubar li {} */
 .tmenu .line{
     height: 5px; background: #0E73A7; position: relative;
+    
 }
 
 /* content */
 .conbg{
-    height: 1236px; min-width: 1600px;
+    height: 1236px; min-width: 980px;
+    /* margin: 0 auto; */
     /* height: 100vh; min-width: 1600px; */
     background-image: url(../images/conbg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    padding-top: 55px;
 }
 
 .cmain{
@@ -107,11 +116,46 @@ body{
     background: lightgray;
 }
 .cmain .mainle .slide .bxPager{
-    float: left;
+    float: left; height: 100%; width: 132px;
+    background: gray;
 }
+.cmain .mainle .slide .bxPager a{
+    height: calc(300px/4); width: 100%;
+    background: #0099CB; text-align: center;
+    display: flex; align-items: center; justify-content:left;
+    padding-left: 15px; color: #fff; font-size: 18px; letter-spacing: -2px;
+}
+.cmain .mainle .slide .bxPager a img.act{display: none;}
+.cmain .mainle .slide .bxPager a.active img.unact{display: none;}
+.cmain .mainle .slide .bxPager a.active img.act{display: flex;}
+
+
+.cmain .mainle .slide .bxPager a:hover{
+    background: #006599;
+}
+.cmain .mainle .slide .bxPager a.active{
+    background: #fff; color: #000;
+}
+/* .cmain .mainle .slide .bxPager a{} */
+
+/* .cmain .mainle .slide .mainsli -> li클래스 .list 로 변경 */
 .cmain .mainle .slide .mainsli{
-float: right;
+    float: right; width: 350px;
 }
+.cmain .mainle .slide .mainsli form{
+    margin: 0 auto;padding: 12px;
+}
+.cmain .mainle .slide .mainsli fieldset{border: 0;}
+.cmain .mainle .slide .mainsli label{
+    display: block; padding: 6px 0 3px 0; font-size: 16px;
+}
+.cmain .mainle .slide .mainsli select{
+    width: 100%;height: 34px;font-size: 1em;
+    border-radius:5px;text-indent:10px;
+    border: 3px solid #EDEDED;
+}
+.cmain .mainle .slide .mainsli fieldset{}
+
 
 
 .cmain .mainri{
