@@ -113,7 +113,7 @@ body{
 }
 .cmain .mainle .slide{
     width: 482px; height: 300px;
-    background: lightgray;
+    background: white;
 }
 .cmain .mainle .slide .bxPager{
     float: left; height: 100%; width: 132px;
@@ -138,23 +138,77 @@ body{
 }
 /* .cmain .mainle .slide .bxPager a{} */
 
-/* .cmain .mainle .slide .mainsli -> li클래스 .list 로 변경 */
+/* .cmain .mainle .slide .mainsli -> li클래스 .list 로 변경
+높낮이조절 */
 .cmain .mainle .slide .mainsli{
     float: right; width: 350px;
 }
 .cmain .mainle .slide .mainsli form{
-    margin: 0 auto;padding: 12px;
+    margin: 0 auto;padding: 6px 15px;
 }
 .cmain .mainle .slide .mainsli fieldset{border: 0;}
 .cmain .mainle .slide .mainsli label{
-    display: block; padding: 6px 0 3px 0; font-size: 16px;
+    display: block; padding: 12px 0 4px 0; font-size: 16px;
 }
 .cmain .mainle .slide .mainsli select{
     width: 100%;height: 34px;font-size: 1em;
     border-radius:5px;text-indent:10px;
-    border: 3px solid #EDEDED;
+    border: 3px solid #EDEDED; color: #666;
 }
-.cmain .mainle .slide .mainsli fieldset{}
+/* .cmain .mainle .slide .mainsli .left{
+    float: left; width: 150px;
+} */
+.left{float: left;}
+.right{float: right;}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(../images/cal.png) no-repeat left center;
+    cursor: pointer;
+}
+.left #sdate{
+    border: 3px solid #EDEDED; height: 34px; width: 150px;
+    font-size: 1em; border-radius:5px;text-indent: 6px;
+    color: #888;
+}
+.right #edate{
+    border: 3px solid #EDEDED; height: 34px; width: 150px;
+    font-size: 1em; border-radius:5px;text-indent: 6px;
+    color: #888;
+}
+.cmain .mainle .slide .mainsli .left select{width: 150px;}
+.right ul li .leftm{float: left; width: 70px;}
+.right ul li .rightm{
+    float: right; width: 70px; margin-left: 10px;
+}
+.right ul li .leftm #num1{
+    border: 3px solid #EDEDED; height: 34px; width: 70px;
+    font-size: 1em; border-radius:5px;text-indent: 6px;
+    color: #888;
+}
+.right ul li .rightm #num2{
+    border: 3px solid #EDEDED; height: 34px; width: 70px;
+    font-size: 1em; border-radius:5px;text-indent: 6px;
+    color: #888;
+}
+
+/* .slide .mainsli {} */
+/* .cmain .mainle .slide .mainsli .left #edate{
+    border: 3px solid #EDEDED; height: 34px;
+    font-size: 1em; border-radius:5px;text-indent:10px;
+} */
+/* .cmain .mainle .slide .mainsli .right{
+    float: right; width: 150px;
+    ;}
+    .cmain .mainle .slide .mainsli .right .leftm{
+        float: left; width: 70px;
+    } */
+.cmain .mainle .slide .mainsli .subplan{
+    width: 310px; height: 40px; margin-top: 20px;
+    background: #EA4F1F url(../images/dodbogi\ 1.png) no-repeat;
+    background-position: 96px 5px;
+    border: 1px solid #EA4F1F;
+    border-radius: 5px; color: #fff; font-size: 18px;
+    display: block; cursor: pointer;
+}
 
 
 
