@@ -1,6 +1,7 @@
 @charset "utf-8";
 html,body{height: 100%;}
 
+#header_top{position: relative;}
 #header_top .logo{background: red;height: 50px;padding: 0 10px;}
 
 .bx-wrapper {
@@ -32,9 +33,15 @@ html,body{height: 100%;}
     background: white;
 }
 
+/* .content{
+    width: 1240px; position: absolute;left: 50%;
+    transform: translateX(-50%); bottom: 0;
+} */
 
-.content>ul>li{float: left;width: 25%;height: 310px;background: orange;}
-
+.content>ul>li{
+    /* float: left; */
+     width: 25%; height: 310px; background: orange;
+    }
 .content>ul>li:nth-child(2n){background: skyblue;}
 .content>ul>li:nth-child(1){}
 .content>ul>li:nth-child(2){}
@@ -49,8 +56,10 @@ html,body{height: 100%;}
 .content>ul>li:nth-child(11){width: 50%;}
 
 
+
 @media screen and ( min-width:700px ){
-    #main_header{height: 1930px;background: #ddd;position: relative;}
+
+    #main_header{height: 1950px;background: #ddd;}
 
     #header_top{
         width: 1240px;background: pink;z-index: 1;
@@ -63,7 +72,6 @@ html,body{height: 100%;}
     #header_top .gnb li>a{display: block;line-height: 50px;text-align: center;padding:0 30px}
     .toggle{display: none;}
 
-    .sliderWrap{position: relative;}
     .sliderWrap .li_1st,.sliderWrap .li_2st{
         height: 1000px;
         background-repeat: no-repeat;
@@ -77,15 +85,17 @@ html,body{height: 100%;}
         background-image: url(../images/mainimg02.jpg);
     }
     .bx-wrapper .bx-pager{
-        bottom: 350px;
-    }
-
-
-    .content{
-        width: 1240px;position: absolute;left: 50%;
-        transform:translateX(-50%);bottom: 0;
+        bottom: 400px;
     }
     
+    /* .contop{position: relative;} */
+    .content{
+        width: 1240px; position: absolute;left: 50%;
+        transform: translateX(-50%); bottom: 0; height: 1240px;
+    }
+    .content>ul{
+        display: flex; flex-wrap: wrap;
+    }
     
 } /* pc media */
 
@@ -164,5 +174,6 @@ html,body{height: 100%;}
 .content>ul>li:nth-child(9){display: none;}
 .content>ul>li:nth-child(10){position: static;}
 .content>ul>li:nth-child(11){position: static;}
+    
 
 }/* mobile media */

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.headertp{}
+.headertp .logo{
+    background: url(../img/logo_pc.png) no-repeat; display: block;
+    
+}
+
+.headertp li{float: left;}
+
+
