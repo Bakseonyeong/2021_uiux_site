@@ -1,11 +1,75 @@
 @charset "utf-8";
 
-.headertp{}
+.headertp{
+    width: 1260px; margin: 0 auto; margin-top: 45px; display: flex; position: relative; 
+    z-index: 1;
+}
 .headertp .logo{
-    background: url(../img/logo_pc.png) no-repeat; display: block;
-    
+    display: block; width: 190px; height: 40px;
 }
 
-.headertp li{float: left;}
+.headertp .gnb{position: absolute;right: 0;}
+.headertp .gnb li{float: left;}
+.headertp .gnb a{font-size: 20px;line-height: 40px; display: block; padding: 0 35px;}
+/* .headertp li:last-child{padding-right: 0;} */
+
+
+.bxslide .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    margin-bottom: 0;
+}
+
+.bxslide{height: 1010px; width: 100%; position: absolute; top: 0;}
+.bxslide li{height: 1010px; position: relative;}
+.bxslide li a{
+    position: absolute; top: 460px; left: 50%; transform: translateX(-584px);
+}
+
+.bxslide .slpg1{
+    background-color: #EBD9CB; background-image: url(../pcimg/pc_sl1.jpg);
+    background-repeat: no-repeat; background-position: center;
+    /* background-size: cover; */
+}
+.bxslide .slpg2{
+    background-color: #EBD9CB; background-image: url(../pcimg/pc_sl1.jpg);
+    background-repeat: no-repeat; background-position: center;
+}
+.bxslide .slpg3{
+    background-color: #EBD9CB; background-image: url(../pcimg/pc_sl1.jpg);
+    background-repeat: no-repeat; background-position: center;
+}
+/* .bxslide .slpg2{background: url(../pcimg/pc_sl1.png) no-repeat center;}
+.bxslide .slpg3{background: url(../pcimg/pc_sl1.png) no-repeat center;} */
+
+
+.cube{
+    position: relative;
+    
+}
+.cube>ul{
+    display: flex;
+    flex-wrap:wrap;
+    width: 1260px; height: 1260px;
+}
+.cube>ul>li{
+    background: #ddd; width: 315px; height: 315px; float: left;
+}
+.cube>ul>li:nth-child(2n){background: #bbb;}
+.cube>ul>li:nth-child(1){}
+.cube>ul>li:nth-child(2){width: 630px;}
+.cube>ul>li:nth-child(3){}
+.cube>ul>li:nth-child(4){}
+.cube>ul>li:nth-child(5){}
+.cube>ul>li:nth-child(6){width: 630px;}
+.cube>ul>li:nth-child(7){height: 630px;}
+.cube>ul>li:nth-child(8){width: 630px;}
+.cube>ul>li:nth-child(9){}
+.cube>ul>li:nth-child(10){}
+.cube>ul>li:nth-child(11){width: 630px;}
+
+
 
 
