@@ -10,12 +10,19 @@
     <link rel="stylesheet" href="css/stylebr.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
 
     <script>
         $(document).ready(function(){
             $(".slider").bxSlider({
+               controls:false 
+            });
+            $(".slider2").bxSlider({
                controls:false 
             });
         });
@@ -26,11 +33,20 @@
 </head>
 <body>
     <header id="mainhd">
+        
         <div class="headertp">
             <h1 class="logo">
-                <a href="main.html"><img src="pcimg/logo_pc.png" alt="LOGO"></a>
+                <a href="main.html">
+                    <img src="pcimg/logo_pc.png" alt="LOGO" class="pc">
+                    <img src="moimg/logo_mo.png" alt="LOGO" class="mo">
+                </a>
             </h1>
 
+            <div class="ham mo">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
             <nav class="gnb">
                 <ul class="clearfix">
                     <li><a href="#">브랜드</a></li>
@@ -41,12 +57,12 @@
                     <li><a href="#">고객센터</a></li>
                 </ul>
             </nav>
-
         </div>
+        
 
         <div class="bxslide">
             <div>
-                <ul class="slider">
+                <ul class="slider pc">
                     <li class="slpg1">
                         <a href="#"><img src="pcimg/slide_look1.png" alt=""></a>
                     </li>
@@ -58,7 +74,19 @@
                     <li class="slpg3">
                         <a href="#"><img src="pcimg/slide_look1.png" alt=""></a>
                     </li>
+                </ul>
+                <ul class="slider mo">
+                    <li class="slpg1">
+                        <a href="#"><img src="moimg/mo_sl1.png" alt=""></a>
+                    </li>
                      
+                    <li class="slpg2">
+                        <a href="#"><img src="moimg/mo_sl1.png" alt=""></a>
+                    </li>
+                     
+                    <li class="slpg3">
+                        <a href="#"><img src="moimg/mo_sl1.png" alt=""></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -66,82 +94,200 @@
         <div class="cube">
             <ul class="clearfix">
                 <li>
-                    1
+                    
                     <a href="#">
                         <img src="pcimg/micon1.png" alt="">
-                        <h3>브랜드소개</h3>
+                        
+                        <h4>브랜드소개</h4>
                     </a>
                 </li>
 
                 <li>
-                    2
-                    <a href="#">2</a>
+                    <div class="bxslide2">
+                        <ul class="slider2">
+                            <li class="sl2-1">
+                                <div class="left">
+                                    <img src="pcimg/msl1.png" alt="" class="pc">
+                                    <img src="moimg/msl_mo1.png" alt="" class="mo">
+                                </div>
+                                <div class="right">
+                                    <p>New Product Info</p>
+                                    <div class="bar"></div>
+                                    <h3 class="mo">더블치즈 깻잎 탕종 식빵</h3>
+                                    <h3 class="pc">더블치즈 깻잎 탕종 식빵</h3>
+                                    <span class="pc">
+                                        향긋한 밀양 깻잎 페스토와 생<br>깻잎, 2가지 치즈를 넣어 구운<br>
+                                        고소하고 쫄깃한 탕종식빵
+                                    </span>
+                                    <a href="#">+ 자세히 보기</a>
+                                </div>
+                            </li>
+                            <li class="sl2-2">
+                                <div class="left">
+                                    <img src="pcimg/msl1.png" alt="" class="pc">
+                                    <img src="moimg/msl_mo1.png" alt="" class="mo">
+                                </div>
+                                <div class="right">
+                                    <p>New Product Info</p>
+                                    <div class="bar"></div>
+                                    <h3 class="mo">더블치즈 깻잎 탕종 식빵</h3>
+                                    <h3 class="pc">더블치즈 깻잎 탕종 식빵</h3>
+                                    <span class="pc">
+                                        향긋한 밀양 깻잎 페스토와 생<br>깻잎, 2가지 치즈를 넣어 구운<br>
+                                        고소하고 쫄깃한 탕종식빵
+                                    </span>
+                                    <a href="#">+ 자세히 보기</a>
+                                </div>
+                                
+                            </li>
+                            <li class="sl2-3">
+                                <div class="left">
+                                    <img src="pcimg/msl1.png" alt="" class="pc">
+                                    <img src="moimg/msl_mo1.png" alt="" class="mo">
+                                </div>
+                                <div class="right">
+                                    <p>New Product Info</p>
+                                    <div class="bar"></div>
+                                    <h3 class="mo">더블치즈 깻잎 탕종 식빵</h3>
+                                    <h3 class="pc">더블치즈 깻잎 탕종 식빵</h3>
+                                    <span class="pc">
+                                        향긋한 밀양 깻잎 페스토와 생<br>깻잎, 2가지 치즈를 넣어 구운<br>
+                                        고소하고 쫄깃한 탕종식빵
+                                    </span>
+                                    <a href="#">+ 자세히 보기</a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li>
-                    3
+                    
                     <a href="#">
                         <img src="pcimg/micon2.png" alt="">
-                        <h3>채용공고</h3>
+                        <h4>채용공고</h4>
                     </a>
                 </li>
 
                 <li>
-                    4
+                    
                     <a href="#">
                         <img src="pcimg/micon3.png" alt="">
-                        <h3>뉴스</h3>
+                        <h4>뉴스</h4>
                     </a>
                 </li>
 
                 <li>
-                    5
+                    
                     <a href="#">
                         <img src="pcimg/micon4.png" alt="">
-                        <h3>제휴</h3>
+                        <h4>제휴</h4>
                     </a>
                 </li>
 
                 <li>
-                    6
-                    <a href="#">6</a>
+                    
+                    <a href="#"><img src="pcimg/mimg1.png" alt=""></a>
                 </li>
 
                 <li>
-                    7
-                    <a href="#">7</a>
+                    <p>다양한 빵과 커피</p>
+                    <div class="bar"></div>
+                    <h3>매일 새롭고<br>신선한<br>브레댄코</h3>
                 </li>
 
                 <li>
-                    8
-                    <a href="#">8</a>
+                    <p>브레댄코의 제빵원리</p>
+                    <div class="bar"></div>
+                    <h3>탕종법을 사용한 반죽과<br>전통 수작업 방식</h3>
                 </li>
 
                 <li>
-                    9
+                    
                     <a href="#">
                         <img src="pcimg/micon5.png" alt="">
-                        <h3>창업문의</h3>
+                        <h4>창업문의</h4>
                     </a>
                 </li>
 
                 <li>
-                    10
+                    
                     <a href="#">
                         <img src="pcimg/micon6.png" alt="">
-                        <h3>매장보기</h3>
+                        <h4>매장찾기</h4>
                     </a>
                 </li>
 
                 <li>
-                    11
-                    <a href="#">11</a>
+                    <p>브레댄코의 약속</p>
+                    <div class="bar"></div>
+                    <h3>함께 하는 건강한 성장</h3>
+                    <span>
+                        가맹점주, 직원, 농가, 협력사와 안정적이고
+                        <br>건강한 관계를 유지하는 브레댄코
+                    </span>
                 </li>
             </ul>
         </div>
         
-
     </header>
+
+    <div class="content">
+        <div class="menu pc">
+            <p>메뉴</p>
+            <div class="bar"></div>
+            <h3>BREAD & CO.</h3>
+            <ul>
+                <li>
+                    <img src="pcimg/mmenu1.png" alt="">
+                    <h4>BREAD</h4>
+                    <span>
+                        100℃ 끓는 물로 반죽하는 탕종법과
+                        <br>전통 수작업 방식으로 만드는<br>
+                        다양하고 맛있는 빵
+                    </span>
+                    <a href="#">자세히 보기</a>
+                </li>
+                 
+                <li>
+                    <img src="pcimg/mmenu2.png" alt="">
+                    <h4>GIFT</h4>
+                    <span>
+                        정성을 들여 만든 빵을
+                        <br>깔끔하고 정성스레 포장한<br>
+                        브레댄코 선물세트
+                    </span>
+                    <a href="#">자세히 보기</a>
+                </li>
+                 
+                <li>
+                    <img src="pcimg/mmenu3.png" alt="">
+                    <h4>BEBERAGE</h4>
+                    <span>
+                        브레댄코의 빵과
+                        <br>더욱 맛있게 즐길 수 있는<br>
+                        다양한 종류의 음료
+                    </span>
+                    <a href="#">자세히 보기</a>
+                </li>
+                 
+                <li>
+                    <img src="pcimg/mmenu4.png" alt="">
+                    <h4>OTHER / MD product</h4>
+                    <span>
+                        가볍고 다양한 기호에 맞춰
+                        <br>브레댄코의 빵에 곁들여 먹을 수 있는<br>
+                        다양한 상품 제공
+                    </span>
+                    <a href="#">자세히 보기</a>
+                </li>
+                 
+            </ul>
+        </div>
+
+    </div>
+
     
 </body>
 </html>
