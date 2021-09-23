@@ -10,27 +10,19 @@
     <link rel="stylesheet" href="css/stylebr.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/jquery.bxslider.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $(".slider").bxSlider({
-               controls:false 
-            });
-            $(".slider2").bxSlider({
-               controls:false 
-            });
-        });
-
-    </script>
 
 
-</head>
+</head> 
 <body>
     <header id="mainhd">
         
@@ -42,12 +34,25 @@
                 </a>
             </h1>
 
-            <div class="ham mo">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="mo">
+                <div class="ham">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <nav class="gnbm">
+                    <ul class="clearfix">
+                        <li><a href="#">브랜드</a></li>
+                        <li><a href="#">제품</a></li>
+                        <li><a href="#">이벤트&뉴스</a></li>
+                        <li><a href="#">제휴</a></li>
+                        <li><a href="#">창업</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+
+                </nav>
             </div>
-            <nav class="gnb">
+            <nav class="gnb pc">
                 <ul class="clearfix">
                     <li><a href="#">브랜드</a></li>
                     <li><a href="#">제품</a></li>
@@ -104,7 +109,7 @@
 
                 <li>
                     <div class="bxslide2">
-                        <ul class="slider2">
+                        <ul class="slider2 clearfix">
                             <li class="sl2-1">
                                 <div class="left">
                                     <img src="pcimg/msl1.png" alt="" class="pc">
@@ -284,6 +289,115 @@
                 </li>
                  
             </ul>
+        </div>
+
+        <div class="menu mo">
+            <h3>MENU</h3>
+            <div class="bar"></div>
+            <ul>
+                <li>
+                    
+                    <a href="#">
+                        <img src="pcimg/mmenu1.png" alt="">
+                        <h4>BREAD</h4>
+                    </a>
+                </li>
+                 
+                <li>
+                    <a href="#">
+                        <img src="pcimg/mmenu2.png" alt="">
+                        <h4>GIFT</h4>
+                    </a>
+                </li>
+                 
+                <li>
+                    <a href="#">
+                        <img src="pcimg/mmenu3.png" alt="">
+                        <h4>BEBERAGE</h4>
+                    </a>
+                </li>
+                 
+                <li>
+                    <a href="#">
+                        <img src="pcimg/mmenu4.png" alt="">
+                        <h4>OTHER / MD product</h4>
+                    </a>
+                </li>
+                 
+            </ul>
+        </div>
+
+        <div class="sns pc">
+            <ul>
+                <li>
+                    <img src="pcimg/snsicon1.png" alt="">
+                </li>
+                <li>
+                    <div class="top">
+                        <img src="pcimg/sns1.png" alt="">
+                    </div>
+                    <div class="bott">
+                        <span>
+                            가을에도 민초 하세요<br>
+                            브레댄코 민트음료 4종 출시!<br>
+                            향긋한 민트와 다양한 재료의 만남!<br>
+                            가까운 매장에서 즐겨보세요!<br>
+                            민트크림 듬뿍 민트초코 듬뿍!<br><br>
+
+                            #민트크림밀크티 #민트밀크티<br>
+                            #민트크림콜드브루 #민트초코스무디
+                        </span>
+                        <div class="har">
+                            <a href="#"><img src="pcimg/snshartr.png" alt=""></a>
+                            <p>718</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <span>
+                            가을에도 민초 하세요<br>
+                            브레댄코 민트음료 4종 출시!<br>
+                            향긋한 민트와 다양한 재료의 만남!<br>
+                            가까운 매장에서 즐겨보세요!<br>
+                            민트크림 듬뿍 민트초코 듬뿍!<br><br>
+
+                            #민트크림밀크티 #민트밀크티<br>
+                            #민트크림콜드브루 #민트초코스무디
+                        </span>
+                        <div class="har">
+                            <a href="#"><img src="pcimg/snshartr.png" alt=""></a>
+                            <p>718</p>
+                        </div>
+                    </div>
+                    <div class="bott">
+                        <img src="pcimg/sns2.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="top">
+                        <img src="pcimg/sns3.png" alt="">
+                    </div>
+                    <div class="bott">
+                        <span>
+                            가을에도 민초 하세요<br>
+                            브레댄코 민트음료 4종 출시!<br>
+                            향긋한 민트와 다양한 재료의 만남!<br>
+                            가까운 매장에서 즐겨보세요!<br>
+                            민트크림 듬뿍 민트초코 듬뿍!<br><br>
+
+                            #민트크림밀크티 #민트밀크티<br>
+                            #민트크림콜드브루 #민트초코스무디
+                        </span>
+                        <div class="har">
+                            <a href="#"><img src="pcimg/snshartr.png" alt=""></a>
+                            <p>718</p>
+                        </div>
+                    </div>
+                </li>
+ 
+            </ul>
+
         </div>
 
     </div>
