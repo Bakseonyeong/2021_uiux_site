@@ -28,7 +28,14 @@ body{font-family: 'Roboto', sans-serif; letter-spacing: -1.8px;}
 }
 
 
+.bxslide2 {position: relative; z-index: 10;}
+.bxslide2 .bx-wrapper .bx-pager.bx-default-pager{
+    position: absolute; bottom: 15px; left: 130px;
 
+}
+.bxslide2 .bx-wrapper .bx-pager.bx-default-pager a{
+    background: #bbb; transition:0.3s; 
+}
 .cube>ul>li{
     color: white; justify-content: center; display: flex; justify-items: center; align-items: center; background: #ddd; text-align: center;
 }
@@ -42,6 +49,9 @@ body{font-family: 'Roboto', sans-serif; letter-spacing: -1.8px;}
 .cube>ul>li:nth-child(5){background: #8FBB33;}
 .cube>ul>li:nth-child(9){background: #8FBB33;}
 .cube>ul>li:nth-child(10){background: #802429;}
+
+
+.sns>ul>li{background: #EAEAEA;}
 
 
 @media screen and (min-width:700px){
@@ -69,9 +79,10 @@ body{font-family: 'Roboto', sans-serif; letter-spacing: -1.8px;}
         bottom: 350px; position: absolute;
     }
     .bxslide li{height: 1010px; position: relative;}
-    .bxslide li a{
+    .bxslide .slpg1 a{
         position: absolute; top: 460px; left: 50%; transform: translateX(-584px);
     }
+    .bxslide .slpg2 a{position: absolute; width: 100%; height: 100%;}
     
     .bxslide .slpg1{
         background-color: #EBD9CB; background-image: url(../pcimg/pc_sl1.jpg);
@@ -79,7 +90,7 @@ body{font-family: 'Roboto', sans-serif; letter-spacing: -1.8px;}
         /* background-size: cover; */
     }
     .bxslide .slpg2{
-        background-color: #EBD9CB; background-image: url(../pcimg/pc_sl1.jpg);
+        background-color: #EBD9CB; background-image: url(../pcimg/pc_sl2.png);
         background-repeat: no-repeat; background-position: center;
     }
     .bxslide .slpg3{
@@ -181,8 +192,72 @@ body{font-family: 'Roboto', sans-serif; letter-spacing: -1.8px;}
     .menu>ul>li a{}
 
 
-    .sns{background: #ddd;}
+    .sns{
+        background: #fff; width: 1260px; height: 630px; margin: 0 auto; margin-bottom: 80px;
+    }
 
+    .sns>ul{
+        display: flex;
+        flex-wrap:wrap; position: relative;
+        width: 1260px; height: 630px;
+    }
+    .sns>ul>li{
+        width: 315px; height: 630px; float: left;
+        font-size: 17px; line-height: 26px;
+    }
+    .sns>ul>li span{font-weight: 100;}
+    
+    .sns>ul>li>h4{margin-top: 28px; margin-bottom: 75px; font-size: 36px; font-weight: normal; text-align: center;}
+
+    .sns>ul .har{position: relative;}
+    .sns>ul .har>a{position: absolute;}
+    .sns>ul .har>p{position: absolute;left: 27px;}
+
+    .sns>ul>li:nth-child(1){
+        color: #fff; background: #802429; padding: 40px;
+        
+    }
+    .sns>ul>li:nth-child(1)>img{padding: 40px 0 0 58px;}
+    .sns>ul>li:nth-child(1)>.har{padding-top: 66px;}
+    .sns>ul>li:nth-child(2)>.bott{padding: 33px; height: 315px;}
+    .sns>ul>li:nth-child(2)>.bott>.har{padding-top: 15px;}
+    .sns>ul>li:nth-child(3)>.top{padding: 33px; height: 315px;}
+    .sns>ul>li:nth-child(3)>.top>.har{padding-top: 42px;}
+    .sns>ul>li:nth-child(4)>.bott{padding: 33px; height: 315px;}
+    .sns>ul>li:nth-child(4)>.bott>.har{padding-top: 42px;}
+
+    .sns>ul>li:nth-child(4){}
+    
+
+    .bot{width: 1260px; height: 316px; margin: 0 auto; margin-bottom: 80px;}
+    .bot>div{float: left;}
+    .bot>div>h3{font-size: 36px; font-weight: normal; padding-bottom: 31px;}
+    .bot>div>p{font-size: 18px; line-height: 30px; font-weight: 100; padding-bottom: 36px;}
+    .bot>div>a{display: block; text-align: center; line-height: 50px; color: #fff; font-size: 17px; width: 170px; height: 50px; border: 2px solid #fff;}
+
+    .bot>.le{width: 630px; height: 316px; background-image: url(../pcimg/mbotbg1.png); color: #fff; padding: 48px;position: relative;}
+    .bot>.ri{width: 630px; height: 316px; background-image: url(../pcimg/mbotbg2.png); color: #fff; padding: 48px; text-align: right; position: relative;}
+    .bot>.le>.bar{position: absolute; background: #fff; width: 50px; height: 3px; top: 111px; left: 49px;}
+    .bot>.ri>.bar{position: absolute; background: #fff; width: 50px; height: 3px; top: 111px; right: 49px;}
+    .bot>.ri>a{float: right;}
+
+
+    .footer .bar{
+        background: #878787; width: 100%; height: 2px; margin-bottom: 30px;
+    }
+
+    .footer>.fcon{width: 1260px; margin: 0 auto; display: flex; justify-content:space-between; align-items: center;}
+    .footer>div{}
+
+    .footer li{float: left;}
+    /* .footer .site ul{width: 250px;height: 50px;} */
+    .footer .site li{float: left;}
+
+    /* main */
+
+    /* br1 */
+
+    .subtitle{background-image: url(../pcimg/brand.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 100%; height: 460px;}
     
 }
 
