@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+*{letter-spacing: -0.5px;}
 :root{}
 .container-xl {
     max-width: 1400px;
@@ -9,18 +9,34 @@
 .pl-30{padding-left: 30px;}
 .pl-50{padding-left: 50px;}
 .pl-70{padding-left: 70px;}
+.pl-100{padding-left: 100px;}
+ 
+.pr-10{padding-right: 10px;}
+.pr-20{padding-right: 20px;}
+.pr-30{padding-right: 30px;}
+.pr-50{padding-right: 50px;}
+.pr-70{padding-right: 70px;}
+.pr-100{padding-right: 100px;}
+ 
+.pt-10{padding-top: 10px;}
+.pt-20{padding-top: 20px;}
+.pt-30{padding-top: 30px;}
+.pt-50{padding-top: 50px;}
+.pt-70{padding-top: 70px;}
+.pt-100{padding-top: 100px;}
+ 
+.pb-10{padding-bottom: 10px;}
+.pb-20{padding-bottom: 20px;}
+.pb-30{padding-bottom: 30px;}
+.pb-50{padding-bottom: 50px;}
+.pb-70{padding-bottom: 70px;}
+.pb-100{padding-bottom: 100px;}
 
-@media screen and ( min-width:768px ){
-    .mo{display: none !important;}
-}
-@media screen and ( max-width:767px ){
-    .pc{display: none !important;}
-}
 
 .cow{color: #FFF;}
 
 header{
-    background-color: #9C190A; height: 500px;
+    background-color: #9C190A;
     background-image: url(../images/maintbg.png);
     background-repeat: no-repeat;
     background-position: 0 center;
@@ -28,19 +44,67 @@ header{
     
 }
 .bgt{
-    height: 500px;
     background: linear-gradient( to bottom, #9C190A 10%, transparent 20%);
 }
 
 .navbar li.act>a{color: #fff !important;}
 
 .content .ident{background: #F5F5F5;}
+.ident .idcon1{
+    background-image: url(../images/conbg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ident .idcon2{
+    background-image: url(../images/conbg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ident .idcon3{
+    background-image: url(../images/conbg3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ident .idcon4{
+    background-image: url(../images/conbg4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
 footer{background: #221E1F; color: #fff; padding-top: 20px;}
-.fcon{margin: 0 auto; max-width: 1400px;}
+.fcon{margin: 0 auto; max-width: 1200px !important;}
 
 footer a{color: #fff !important;}
+
+
+@media screen and ( min-width:768px ){
+    .mo{display: none !important;}
+
+    .row{width: 90vw; max-width: 1100px; margin: 0 auto;}
+
+    header{height: 500px;}
+    
+    .mtitle{font-size: 4.5vw;}
+    .mtxt{font-size: 13px;}
+    .mtbtn{font-size: 10px; padding: 6px 42px; margin-right: 2px;}
+    .bgt .img img{width: 100%;}
+    
+    
+}
+
+@media screen and ( max-width:767px ){
+    .pc{display: none !important;}
+    
+    header{
+        height: 900px;
+        background: url(../images/mainbg_mo.png) center no-repeat;
+        background-size: cover;
+    }
+
+}
+
+
 
 
