@@ -86,8 +86,8 @@ footer a{color: #fff !important;}
 
     header{height: 500px;}
     
-    .mtitle{font-size: 4.5vw;}
-    .mtxt{font-size: 13px;}
+    .mtitle{font-size: 4.2vw;}
+    .mtxt{font-size: 1vw; padding-bottom: 10px;}
     .mtbtn{font-size: 10px; padding: 6px 42px; margin-right: 2px;}
     .bgt .img img{width: 100%;}
     
