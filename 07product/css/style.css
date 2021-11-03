@@ -1,9 +1,20 @@
 @charset "utf-8";
 
-:root{
-    --primary-color:#02b3e4 ;
-    --secondary-color:#ff5483 ;
-    --third-color:#a951ed;
+:root{}
+.container-xl {
+    max-width: 1400px;
+}
+.pl-10{padding-left: 10px;}
+.pl-20{padding-left: 20px;}
+.pl-30{padding-left: 30px;}
+.pl-50{padding-left: 50px;}
+.pl-70{padding-left: 70px;}
+
+@media screen and ( min-width:768px ){
+    .mo{display: none !important;}
+}
+@media screen and ( max-width:767px ){
+    .pc{display: none !important;}
 }
 
 .cow{color: #FFF;}
@@ -20,4 +31,16 @@ header{
     height: 500px;
     background: linear-gradient( to bottom, #9C190A 10%, transparent 20%);
 }
+
+.navbar li.act>a{color: #fff !important;}
+
+.content .ident{background: #F5F5F5;}
+
+
+
+footer{background: #221E1F; color: #fff; padding-top: 20px;}
+.fcon{margin: 0 auto; max-width: 1400px;}
+
+footer a{color: #fff !important;}
+
 
