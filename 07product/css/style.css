@@ -1,5 +1,5 @@
 @charset "utf-8";
-*{letter-spacing: -0.5px;}
+*{letter-spacing: -0.5px; color: #444;}
 :root{}
 .container-xl {
     max-width: 1400px;
@@ -34,6 +34,7 @@
 
 
 .cow{color: #FFF;}
+/* .cent{margin: 0 auto !important;} */
 
 header{
     background-color: #9C190A;
@@ -49,27 +50,31 @@ header{
 
 .navbar li.act>a{color: #fff !important;}
 
-.content .ident{background: #F5F5F5;}
+.maincon .ident{background: #F5F5F5;}
+.ident .idcon1 p{color: #666;}
 .ident .idcon1{
     background-image: url(../images/conbg1.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; background-size: contain;
 }
 .ident .idcon2{
     background-image: url(../images/conbg2.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; background-size: contain;
 }
 .ident .idcon3{
     background-image: url(../images/conbg3.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; background-size: contain;
 }
 .ident .idcon4{
     background-image: url(../images/conbg4.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; background-size: contain;
 }
+
+.news,.atten{background: #9C190A;}
+.news .txt{color: #444;}
 
 
 
@@ -79,7 +84,7 @@ footer{background: #221E1F; color: #fff; padding-top: 20px;}
 footer a{color: #fff !important;}
 
 
-@media screen and ( min-width:768px ){
+@media screen and ( min-width:751px ){
     .mo{display: none !important;}
 
     .row{width: 90vw; max-width: 1100px; margin: 0 auto;}
@@ -90,11 +95,28 @@ footer a{color: #fff !important;}
     .mtxt{font-size: 1vw; padding-bottom: 10px;}
     .mtbtn{font-size: 10px; padding: 6px 42px; margin-right: 2px;}
     .bgt .img img{width: 100%;}
+
+    .maincon .brand h2{font-weight: bold; font-size: 2.5vw;}
+    .maincon .brand p{font-size: 1.2vw;}
+    .maincon .brand{height: 700px;}
+    .maincon .brand .video a{position: relative;}
+    .maincon .brand .video a>img{position: absolute;}
+    .maincon .brand .txt p{padding-top: 20px; padding-bottom: 40px;}
+    .maincon .brand .txt a{
+        font-size: 9px; border: 2px solid #aaa; border-radius: 3px; padding: 4px 40px;}
+
+    .maincon .ident h3{font-size: 2.2vw; font-weight: bold;}
+    .maincon .ident p{font-size: 1.5vw;}
+
+    .maincon .news .card.col-auto{width: 31.5% !important;}
+
+    .atten{position: relative;}
+    .atten .cent{position: absolute; left: 50%; transform: translateX(-50%); width: 60%;}
     
     
 }
 
-@media screen and ( max-width:767px ){
+@media screen and ( max-width:750px ){
     .pc{display: none !important;}
     
     header{
