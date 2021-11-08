@@ -7,3 +7,5 @@
 
 1. 브레댄코 https://bakseonyeong.github.io/2021_uiux_site/04combread/a_main
 
+1. 브레댄코 https://bakseonyeong.github.io/2021_uiux_site/07pro
+
