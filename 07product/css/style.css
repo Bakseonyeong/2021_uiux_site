@@ -112,10 +112,44 @@ header{
     background-position: center; background-size: contain;
 }
 
+
+.section input[id*="slide"] {
+    display: none;
+}
+.section .slidewrap{max-width: 1300px; overflow: hidden;}
+.section .slidelist{
+    white-space: nowrap;
+}
+.section .slidelist>li{
+    display: inline-block; vertical-align: middle; width: 100%; transition: all 0.5s;
+}
+.section .slidelist>li>a{
+    display: block; position: relative;
+}
+.section .slidelist>li>a img{
+    /* width: 100%; */
+}
+.section .slidelist label{
+    position: absolute; z-index: 10; top: 50%; transform: translateY(-50%); cursor: pointer;
+}
+.section .slidelist .left{
+    left: 30px; background: url(../images/prev_btn.png); width: 34px; height: 66px;
+}
+.section .slidelist .right{
+    right: 30px; background: url(../images/next_btn.png); width: 34px; height: 66px;
+}
+.section #slide01:checked ~ .slidewrap .slidelist>li{transform: translateX(0%);}
+.section #slide02:checked ~ .slidewrap .slidelist>li{transform: translateX(-100%);}
+.section #slide03:checked ~ .slidewrap .slidelist>li{transform: translateX(-200%);}
+
+
+
 .bgred{background: #9C190A; position: relative;}
 .bgred .bgw{height: 200px; width: 100%; background: #fff; position: absolute; bottom: 0;}
 
+
 .news .txt{color: #444;}
+
 
 
 
@@ -220,15 +254,17 @@ footer a:hover{font-weight: bold; text-decoration: none;}
     .mtxt{font-size: 2.5vw; padding-bottom: 10px;}
     .mtbtn{font-size: 2vw; padding: 1.2vw 8.6vw; margin-right: 0.5vw;}
 
-    #headerWrap div.row div.img img{width: 90%; margin-left: 3vw;}
+    /* #headerWrap div.row div.img img{width: 90%; margin-left: 3vw;} */
 
 
-    .maincon .brand img{width: 45vw;}
+    /* .maincon .brand a{width: 45vw;} */
+    /* .maincon .brand img{width: 100%;} */
     .maincon .brand h2{font-size: 4.6vw; font-weight: bold; width: 100%; text-align: center; padding-top: 27px; padding-bottom: 12px;}
     .maincon .brand p{font-size: 2vw; width: 100%; text-align: center; padding-bottom: 10px;}
     
+    .maincon .brand .txt{position: relative;}
     .maincon .brand .txt a{
-        font-size: 9px; border: 2px solid #aaa; border-radius: 3px; padding: 4px 40px;
+        font-size: 9px; border: 2px solid #aaa; border-radius: 3px; padding: 4px 40px; position: absolute; left: 50%; transform: translateX(-50%);
     }
 
     .maincon .ident h3{font-size: 20px; font-weight: bold;}
