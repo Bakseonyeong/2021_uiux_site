@@ -5,7 +5,7 @@
     max-width: 1300px;
 }
 
-
+.dnone{display: none;}
 /* padding */
 .pl-10{padding-left: 10px;}
 .pl-20{padding-left: 20px;}
@@ -113,35 +113,7 @@ header{
 }
 
 
-.section input[id*="slide"] {
-    display: none;
-}
-.section .slidewrap{max-width: 1300px; overflow: hidden;}
-.section .slidelist{
-    white-space: nowrap;
-}
-.section .slidelist>li{
-    display: inline-block; vertical-align: middle; width: 100%; transition: all 0.5s;
-}
-.section .slidelist>li>a{
-    display: block; position: relative;
-}
-.section .slidelist>li>a img{
-    /* width: 100%; */
-}
-.section .slidelist label{
-    position: absolute; z-index: 10; top: 50%; transform: translateY(-50%); cursor: pointer;
-}
-.section .slidelist .left{
-    left: 30px; background: url(../images/prev_btn.png); width: 34px; height: 66px;
-}
-.section .slidelist .right{
-    right: 30px; background: url(../images/next_btn.png); width: 34px; height: 66px;
-}
-.section #slide01:checked ~ .slidewrap .slidelist>li{transform: translateX(0%);}
-.section #slide02:checked ~ .slidewrap .slidelist>li{transform: translateX(-100%);}
-.section #slide03:checked ~ .slidewrap .slidelist>li{transform: translateX(-200%);}
-
+ 
 
 
 .bgred{background: #9C190A; position: relative;}
@@ -274,7 +246,5 @@ footer a:hover{font-weight: bold; text-decoration: none;}
     
 
 }
-
-
 
 
