@@ -144,6 +144,11 @@ header{
 
 
 
+.atten{position: relative; height: 730px;}
+.atten .cent{position: absolute; left: 50%; transform: translateX(-50%); width: 500px; max-width: 95%; height: 520px; bottom: 80px;}
+
+
+
 
 
 footer{background: #221E1F; color: #fff; padding-top: 20px;}
@@ -211,15 +216,19 @@ footer a:hover{font-weight: bold; text-decoration: none;}
 
     .maincon .news .card.col-auto{width: 31.5% !important;}
 
-    .atten{position: relative; height: 900px;}
-    .atten .cent{position: absolute; left: 50%; transform: translateX(-50%); width: 600px; height: 650px; bottom: 80px;}
+
 
     /* .company .com{padding-left: 10px;} */
     .company{min-height: 420px; max-height: 600px; position: relative;}
     .company .comimg:hover .hov{display: block; color: #222; font-size: 15px; letter-spacing: -0.2px;}
     
     .bgred .news .card{position: relative;}
-    .bgred .news .card a{width: 120px; font-size: 16px; position: absolute; bottom: 25px; right: 30px;}
+    .bgred .news .card .txt{padding-bottom: 50px;}
+    .bgred .news .card h3{max-height: 100px; overflow: hidden;}
+    .bgred .news .card p{max-height: 140px; overflow: hidden;}
+    .bgred .news .card a{
+        width: 120px; font-size: 16px; position: absolute; bottom: 25px; right: 30px;
+    }
 
 
     
