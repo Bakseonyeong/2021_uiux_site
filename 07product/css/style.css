@@ -81,8 +81,22 @@ header{
     background-size: cover;
     
 }
+header.subbg{
+    background-color: none;
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 100%;
+    
+}
+header.pro1{
+    background-image: url(../img/bg1.jpg);
+}
 .bgt{
     background: linear-gradient( to bottom, #9C190A 10%, transparent 20%);
+}
+.bgt.sub{
+    background: linear-gradient( to right, #9C190A 55%, transparent 55%); height: 100%;
 }
 
 .navbar li a{color: rgba(255, 255, 255, 0.8) !important;}
@@ -90,7 +104,7 @@ header{
 .navbar ul li.act>a{color: #fff !important; font-weight: bold;}
 .navbar ul li:hover>a{color: #fff !important;}
 /* .navbar li.act>a{color: #fff !important;} */
-.navbar ul li>ul{display: none;}
+.navbar ul li>.subm{display: none;}
 
 
 .maincon .identbg{background: #F5F5F5;}
@@ -185,8 +199,14 @@ footer a:hover{font-weight: bold; text-decoration: none;}
 .navbar-toggler div{width: 6.3vw; height: 0.8vw; border-radius: 0.5vw; background: #fff; margin-bottom: 1vw;}
 .navbar-toggler .bar3{margin-bottom: 0;}
 
-#headerWrap#subbg{background: #000;}
-.bgt.sub{}
+/* #headerWrap#subbg{background: #000;} */
+/* .bgt.sub{} */
+
+.map>ul>li{float: left; color: #ccc; font-size: 13px;}
+.map>ul>li>a{color: #ccc; padding: 5px;}
+.map>ul>li.now>a{color: #fff;}
+
+.sub .subtitle h1{color: #9C190A; font-size: 77px; font-weight: bold; text-shadow: -3px 0 #fff, 0 3px #fff, 3px 0 #fff, 0 -3px #fff;}
 
 
 
@@ -205,10 +225,10 @@ footer a:hover{font-weight: bold; text-decoration: none;}
 
     nav.navbar #collapsibleNavId>ul>li{padding-left: 20px;}
     .navbar ul li{position: relative;}
-    .navbar ul li:hover>ul{
+    .navbar ul li:hover>.subm{
         display: block; position: absolute; right: 8px; background: rgba(255, 255, 255, 0.3); padding: 4px 10px; font-size: 14.5px;
     }
-    .navbar ul li:hover>ul>li{padding: 2px 0;}
+    .navbar ul li:hover>.subm>li{padding: 2px 0;}
     
     .mtitle{font-size: 55px; font-weight: bold;}
     .mtxt{font-size: 17px; padding-bottom: 10px;}
@@ -288,7 +308,7 @@ footer a:hover{font-weight: bold; text-decoration: none;}
     }
     nav.navbar #collapsibleNavId>ul>li:last-child{border: none;}
     .bd-none{border: 0 !important;}
-    .navbar ul li:hover>ul{display: block; font-size: 16px; padding-bottom: 3px;}
+    .navbar ul li:hover>.subm{display: block; font-size: 16px; padding-bottom: 3px;}
 
 
     header .tmain .col.pl-100{padding-left: 30px;}
