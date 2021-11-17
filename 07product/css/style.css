@@ -104,14 +104,9 @@ header.pro2{
 header.port{
     background-image: url(../img/protbg.jpg);
 }
-header.cus1{
-    background-image: url(../img/bg1.jpg);
-}
-header.cus2{
-    background-image: url(../img/bg1.jpg);
-}
+
 header.com1{
-    background-image: url(../img/bg1.jpg);
+    background-image: url(../img/about_01.jpg); background-position: center;
 }
 header.com2{
     background-image: url(../img/bg1.jpg);
@@ -132,19 +127,27 @@ header.com3{
 .bgt.whi{
     background: whitesmoke;
 }
+.bgt.red{
+    background: #9C190A;
+}
 
 
 
 
 
 
-h1.newsti{font-size: 115px !important;}
+h1.newsti{font-size: 115px !important; color: #333 !important; -webkit-text-stroke: 1px #333 !important;}
+/* h1.newsti{font-size: 115px !important; color: #333 !important; -webkit-text-stroke: 3px #333 !important;} */
 
 
 .navbar li a{color: rgba(255, 255, 255, 0.8) !important;}
 .navbar li p{color: rgba(255, 255, 255, 0.8) !important; padding-top: 6px;}
 .navbar ul li.act>a{color: #fff !important; font-weight: bold;}
 .navbar ul li:hover>a{color: #fff !important;}
+.cus1 .navbar li a{color: #333 !important;}
+.cus1 .navbar li p{color: #333 !important; padding-top: 6px;}
+.cus1 .navbar ul li.act>a{color: #333 !important; font-weight: bold;}
+.cus1 .navbar ul li:hover>a{color: #333 !important;}
 /* .navbar li.act>a{color: #fff !important;} */
 .navbar ul li>.subm{display: none;}
 
@@ -239,6 +242,7 @@ footer a:hover{font-weight: bold; text-decoration: none;}
 
 .navbar-toggler{border: none;}
 .navbar-toggler div{width: 6.3vw; height: 0.8vw; border-radius: 0.5vw; background: #fff; margin-bottom: 1vw;}
+.cus1 .navbar-toggler div{background: #333;}
 .navbar-toggler .bar3{margin-bottom: 0;}
 
 /* #headerWrap#subbg{background: #000;} */
@@ -355,6 +359,12 @@ footer a:hover{font-weight: bold; text-decoration: none;}
     .bgt.none{
         background: rgba(150, 150, 150, 0.7);
     }
+    .bgt.whi{
+        background: whitesmoke;
+    }
+    .bgt.red{
+        background: #9C190A;
+    }
 
 
 
@@ -418,3 +428,5 @@ footer a:hover{font-weight: bold; text-decoration: none;}
 
 .text-da{color: #333 !important;}
 a.text-da{color: #333 !important;}
+.subtext .subtitle h1.text-white{ -webkit-text-stroke: 0px white;}
+
