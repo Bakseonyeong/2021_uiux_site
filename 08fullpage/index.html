@@ -9,33 +9,162 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+        $(function(){
+            $("#fullpage").fullpage();
+             
+        });
+        // $(document).ready(function(){
+        //     $(".slide").bxSlider({
+        //         controls:false,
+        //         auto:true
+        //     });
+        // });
+
+    </script>
 
 
 </head>
 <body>
     <header>
-        <div class="logo"></div>
         <div class="gnb">
-            <ul>
-                <li>
-                    <a href="#">마켓스쿨</a>
-                    <ul>
-                        <li><a href="#">전체</a></li>
-                        <li><a href="#">패션교복</a></li>
-                        <li><a href="#">패션의류</a></li>
-                        <li><a href="#">악세서리</a></li>
-                        <li><a href="#">리빙</a></li>
-                        <li><a href="#">문구</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="max">
+                <div class="logo"></div>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">마켓스쿨</a>
+                        <ul class="subme">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">패션교복</a></li>
+                            <li><a href="#">패션의류</a></li>
+                            <li><a href="#">악세서리</a></li>
+                            <li><a href="#">리빙</a></li>
+                            <li><a href="#">문구</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">라인업</a>
+                        <ul class="subme">
+                            <li><a href="#">간편교복스타일</a></li>
+                            <li><a href="#">정장교복스타일</a></li>
+                            <li><a href="#">디자인룩북</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드</a>
+                        <ul class="subme">
+                            <li><a href="#">브랜드스토리</a></li>
+                            <li><a href="#">스쿨룩랩</a></li>
+                            <li><a href="#">교복안심시스템</a></li>
+                            <li><a href="#">희망더하기캠페인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                        <ul class="subme">
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">당첨자발표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="subme">
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="subbg"></div>
         </div>
     </header>
 
-    <div class="content"></div>
+    
+    <div class="content" id="fullpage">
+        <div class="section page1">
+            <h3>디자인으로 소통하다.</h3>
+            <img src="images/logo_w.png" alt="">
+            <h5>학생들과 서로 마주보며 소통하는 스쿨룩스<br>
+                남다른 디자인의 교복으로 학생들의 스쿨라이프를 함께합니다.</h5>
+            
+            <div class="arrow tlq"><img src="images/btn_scroll.png" alt=""></div>
+        </div>
+
+        <div class="section page2">
+            <div class="circle c1">
+                <div class="txt">
+                    <h4>#COMMUNICATION</h4>
+                    <p>1318과 끊임없이 소통하고<br>희망을 더합니다.</p>
+                </div>
+            </div>
+            <div class="circle c2">
+                <div class="txt">
+                    <h4>#SENSIBILITY</h4>
+                    <p>1318의 감성을 반영하고<br>꿈을 은원합니다.</p>
+                </div>
+            </div>
+            <div class="circle c3">
+                <div class="txt">
+                    <h4>#LEADING</h4>
+                    <p>1318의 문화를 선도하고<br>자유를 지향합니다.</p>
+                </div>
+            </div>
+            <div class="imgs">
+                <img src="images/br1.png" alt="" class="main">
+                <img src="images/br2.png" alt="" class="hover">
+            </div>
+            <div class="arrow"><img src="images/btn_scroll_o.png" alt=""></div>
+            
+        </div>
+        <div class="section page3">
+            <div class="pager">
+                <div class="jaket">
+                    <img src="images/img_lineup_01.png" alt="">
+                    <!-- <div class="bgho"></div> -->
+                </div>
+                <div class="free">
+                    <!-- <div class="bgho"></div> -->
+                    <img src="images/img_lineup_02.png" alt="">
+                </div>
+            <div class="arrow"><img src="images/btn_scroll_o.png" alt=""></div>
+
+            </div>
+            
+        </div>
+        <div class="section page4">
+            <div class="wrap">
+                <div class="bxslider">
+                    <ul class="slide">
+                        <li><a href="#!" class="sl1"></a></li>
+                        <!-- <li><a href="#!" class="sl2"></a></li>
+                        <li><a href="#!" class="sl3"></a></li>
+                        <li><a href="#!" class="sl4"></a></li>
+                        <li><a href="#!" class="sl5"></a></li>
+                        <li><a href="#!" class="sl6"></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="arrow"><img src="images/btn_scroll.png" alt=""></div>
+            
+        </div>
+
+        <div class="section page5">
+            <img src="images/p5img.jpg" alt="">
+            <div class="top"><a href="index.html"><img src="images/btn_top_o.png" alt=""></a></div>
+
+        </div>
+    </div>
 
 
     <footer></footer>
