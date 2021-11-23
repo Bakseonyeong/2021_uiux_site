@@ -297,14 +297,15 @@ footer a:hover{font-weight: bold; text-decoration: none;}
     .maincon .brand p{font-size: 95%; line-height: 2.2vw;}
     /* .maincon .brand{height: 700px;} */
     .maincon .brand .video{position: relative;}
-    .maincon .brand .video a img{width: 22vw; max-width: 280px;}
+    .maincon .brand .video img{width: 22vw; max-width: 280px;}
 
     .maincon .brand .video a .clwin{position: absolute; z-index: 1;top: 12%; left: 15%;}
     .maincon .brand .video a .clsca{position: absolute;}
-    .maincon .brand .video a .play{position: absolute; z-index: 2; width: 12%; top: 40%; right: 45%;}
+    .maincon .brand .video a .clsca:hover{z-index: 99999;}
+    /* .maincon .brand .video a .play{position: absolute; z-index: 2; width: 12%; top: 40%; right: 45%;} */
 
-    .maincon .brand .video a .capt{position: absolute; z-index: 1;top: 12%; right: 15%;}
-    .maincon .brand .video a .comp{position: absolute; right: 0;}
+    .maincon .brand .video .capt{position: absolute; z-index: 1;top: 12%; right: 15%;}
+    .maincon .brand .video .comp{position: absolute; right: 0;}
 
     .maincon .brand .txt{padding-top: 3.5vw;}
     .maincon .brand .txt p{padding-top: 20px; padding-bottom: 2vw;}
@@ -403,8 +404,9 @@ footer a:hover{font-weight: bold; text-decoration: none;}
     .maincon .brand p{font-size: 2vw; width: 100%; text-align: center; padding-bottom: 10px;}
     
     .maincon .brand .txt{position: relative;}
+    .maincon .brand .txt .but{position: absolute; left: 50%; transform: translateX(-50%);}
     .maincon .brand .txt a{
-        font-size: 9px; border: 2px solid #aaa; border-radius: 3px; padding: 4px 40px; position: absolute; left: 50%; transform: translateX(-50%);
+        font-size: 9px; border: 2px solid #aaa; border-radius: 3px; padding: 4px 40px;
     }
 
     .maincon .ident h3{font-size: 20px; font-weight: bold;}
