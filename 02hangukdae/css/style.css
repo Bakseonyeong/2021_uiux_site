@@ -245,7 +245,7 @@ position: relative;}
 
 
 .venner>ul>li:nth-child(8){
-    width: 75%; height: 225px; color: #FD513D; margin-bottom: 20px;
+    width: 75%; height: 225px; color: #fd4424; margin-bottom: 20px;
     overflow: hidden;}
 .venner>ul>li:nth-child(8) li{position: relative;}
 .venner>ul>li:nth-child(8) .sl2text{
@@ -309,7 +309,13 @@ position: relative;}
 
 
 
-.footer{width: 1000px; height: 200px; background: #fff; margin: 0 auto;}
+.footer{width: 1200px; height: 200px; background: #fff; margin: 0 auto; position: relative;}
+
+.footer .logo{padding-top: 60px;}
+
+.footer .text{position: absolute; top: 35px; left: 300px;}
+.footer ul>li{float: left; font-size: 18px; padding-bottom: 10px;}
+.footer address{font-size: 18px;}
 
 
 
