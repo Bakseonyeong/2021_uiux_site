@@ -8,7 +8,7 @@ header .gnb .logo{position: absolute; top: 10px; left: 15px;width: 130px; height
 header .gnb:hover .logo{background-image: url(../images/logo_o.png);}
 
 .gnb{width: 100vw; height: 40px; background: transparent;}
-.gnb:hover{background: #fffff5;}
+/* .gnb:hover{background: #fffff5;} */
 .gnb>.max{position: relative; max-width: 1200px; height: 36px; margin: 0 auto;}
 .gnb>.max>ul{position: absolute; right: 20px;}
 .gnb>.max>ul>li{width: 104px; float: left; text-align: center; font-size: 19px; padding: 6px 2px; margin-left: 5px;}
@@ -16,13 +16,13 @@ header .gnb:hover .logo{background-image: url(../images/logo_o.png);}
 .gnb:hover>.max>ul>li a{color: #555;}
 .gnb>.max>ul>li a:hover{color: #222;}
 a{display: block;}
-.gnb:hover>.subbg{width: 100vw; height: 180px; background: rgba(255, 255, 240, 0.9);}
+/* .gnb:hover>.subbg{width: 100vw; height: 180px; background: rgba(255, 255, 240, 0.9);}
 
 
 .gnb .subme{display: none;}
 .gnb:hover .subme{display: block;}
 .gnb .subme>li>a{font-size: 13px; letter-spacing: -1px; padding: 5px 2px;}
-.gnb .subme{padding-top: 8px;}
+.gnb .subme{padding-top: 8px;} */
 
 .arrow{position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); padding-bottom: 20px; z-index: 9999;}
 .arrow img{width: 65px !important; height: 45px;}

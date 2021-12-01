@@ -103,11 +103,11 @@ body{
 .cmain{
     width: 980px;height: 557px; 
     margin: 0 auto;
-    background: yellowgreen;
+    _background: yellowgreen;
 }
 
 .cmain .mainle{
-    background: lightblue; float: left;
+    _background: lightgreen; float: left;
     width: 482px; height: 557px;
     
 }
@@ -210,12 +210,77 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block; cursor: pointer;
 }
 
+.mainle{position: relative;}
+.mainle .mainven{position: absolute; bottom: 0; width: 480px;
+    /* display: flex; justify-content: space-around; */
+}
+
+.mainven>div{width: 233px; overflow: hidden; height: 240px; background: #152630;}
+/* .mainven>div>a{width: 233px; height: 190px !important;} */
+/* .mainven>div>.venle>img{height: 200px !important;} */
+
+.mainven .venle{float: left;}
+.mainven .venri{float: right;}
+
+.mainven .bgblue{
+    display: flex; justify-content: center; list-style: circle; height: 50px; padding-top: 10px; _background: #ddd;}
+    
+.mainven .bgblue img{height: 17px;}
+.mainven .bgblue p{font-size: 18px;}
+
+.whi{color: #fff;}
+.gre{color: #6FC466;}
+
 
 
 .cmain .mainri{
-    background:cornflowerblue; float: right;
-    width: 482px; height: 557px;
+    _background:cornflowerblue; float: right;
+    width: 482px; height: 557px; padding: 25px;
+    position: relative; color: #222;
 }
+
+.mainri h1{font-size: 60px; padding-bottom: 10px;}
+.mainri .bar{width: 90px; height: 5px; background: #222; position: absolute; right: 120px; top: 93px;}
+.mainri h2{font-size: 26px;}
+
+
+
+/* con venner,inform */
+.cven, .cinf{width: 980px; height: 240px; margin: 0 auto; display: flex; justify-content: space-between; margin-top: 18px;}
+.cven>div, .cinf>div{
+    width: 233px; height: 100%; 
+    background-image: url(../images/hotbg.png);
+    background-repeat: no-repeat;
+    background-size: cover; background-position: center;
+}
+
+.cven .cven2{background-image: url(../images/disbg.png);}
+.cven .cven3{background-image: url(../images/03여행05.jpg);}
+.cven .cven4{background-image: url(../images/trabg.png);}
+
+.cinf .cinf1{background-image: url(../images/bgplan.png);}
+.cinf .cinf2{background-image: url(../images/bgfood.png);}
+.cinf .cinf3{background-image: url(../images/bghott.png);}
+.cinf .cinf4{background-image: url(../images/bgwood.png);}
+
+.cven>div{position: relative;}
+.cven>div>.tbox{position: absolute; bottom: 0; width: 100%; height: 60px; background: #529351; padding: 12px;}
+.cven>.cven2>.tbox{background: #152630}
+.cven>.cven3>.tbox{background: rgba(0, 0, 0, 0.7)}
+.cven>.cven4>.tbox{background: #44619D}
+.tbox .whi{font-size: 18px;}
+.cven3>h3{text-align: center;padding-top: 20px; font-size: 20px;}
+
+.gry{color: #ddd;}
+
+
+.cinf a{color: #fff;}
+
+
+.cinf a .circle{border: 3px solid #fff; border-radius: 18px; width: 36px; height: 36px;}
+.cinf a .circle div{width: 30px; height: 4px; background: #fff; border-radius: 2px;}
+
+
 
 
 
@@ -258,8 +323,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
+.footer{padding-top: 200px;}
 
 
+
+
+.pr10{padding-right: 10px;}
+.pr20{padding-right: 20px;}
+.pr30{padding-right: 30px;}
+.pr40{padding-right: 40px;}
+.pr50{padding-right: 50px;}
 .m30{margin-bottom: 30px;}
 .ml-15{margin-left: -15px; /* margin-top: 1px; */}
 .ml15{margin-left: 15px !important; /* margin-top: 1px; */}

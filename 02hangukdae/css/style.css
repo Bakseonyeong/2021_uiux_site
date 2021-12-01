@@ -311,11 +311,11 @@ position: relative;}
 
 .footer{width: 1200px; height: 200px; background: #fff; margin: 0 auto; position: relative;}
 
-.footer .logo{padding-top: 60px;}
+.footer .logo{padding-top: 65px;}
 
 .footer .text{position: absolute; top: 35px; left: 300px;}
-.footer ul>li{float: left; font-size: 18px; padding-bottom: 10px;}
-.footer address{font-size: 18px;}
+.footer ul>li{float: left; font-size: 18px; padding-bottom: 15px; padding-right: 15px;}
+.footer address{font-size: 18px; line-height: 25px; letter-spacing: 1.5px;}
 
 
 
