@@ -75,6 +75,8 @@ body{
 .tmenu .menubar li{
     float: left; width: 163.3px; height: 60px; border-left:2px solid #E8E8E8;
 }
+.tmenu .menubar li:hover{background: linear-gradient(to top, #b6e1f5, #78c5f1);}
+.tmenu .menubar li:hover a{color: #fff;}
 .tmenu .menubar li:last-child{
     border-right: 1px solid #E8E8E8;
 }
@@ -103,8 +105,11 @@ body{
 .cmain{
     width: 980px;height: 557px; 
     margin: 0 auto;
+    position: relative;
     _background: yellowgreen;
 }
+.bgi{position: absolute; right:-80px; top: 100px;}
+.bgi img{opacity: 0.8;}
 
 .cmain .mainle{
     _background: lightgreen; float: left;
@@ -276,9 +281,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .cinf a{color: #fff;}
 
+.cinf>div{display: flex; justify-content: center; align-items: center; text-align: center;}
 
-.cinf a .circle{border: 3px solid #fff; border-radius: 18px; width: 36px; height: 36px;}
-.cinf a .circle div{width: 30px; height: 4px; background: #fff; border-radius: 2px;}
+.cinf .tit{display: flex; justify-content: center; align-items: center; padding: 3px 0;}
+.cinf .tit img{height: 33px;}
+.cinf .tit h2{font-size: 20px; font-weight: 600; padding-left: 2px;}
+
+.cinf a p{padding: 2px 0; font-size: 14px;}
+.cinf a .circle{border: 3px solid #fff; border-radius: 17px; width: 34px; height: 34px; margin: 0 auto; margin-top: 3px; margin-bottom: 3px; position: relative;}
+.cinf a .circle div{width: 16px; height: 4px; background: #fff; border-radius: 2px;}
+
+.cinf a .circle .line1{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(90deg); transition: 0.3s;}
+.cinf a .circle .line2{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); transition: 0.3s;}
+.cinf a .blank{height: 80px;}
+
+
+.cinf a:hover .circle .line1{left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(270deg);}
+.cinf a:hover .circle .line2{left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(180deg);}
 
 
 
@@ -323,7 +342,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-.footer{padding-top: 200px;}
+.footer{padding-top: 50px; padding-bottom: 25px;}
+.footer ul{padding-bottom: 10px;}
+.footer li{float: left; padding-right: 30px; font-size: 18px;}
+.footer li:hover{float: left; padding-right: 30px; font-size: 18px; font-weight: 600;}
+.footer address{padding-top: 2px;}
 
 
 

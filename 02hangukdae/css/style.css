@@ -314,8 +314,8 @@ position: relative;}
 .footer .logo{padding-top: 65px;}
 
 .footer .text{position: absolute; top: 35px; left: 300px;}
-.footer ul>li{float: left; font-size: 18px; padding-bottom: 15px; padding-right: 15px;}
-.footer address{font-size: 18px; line-height: 25px; letter-spacing: 1.5px;}
+.footer ul>li{float: left; font-size: 16px; padding-bottom: 15px; padding-right: 15px;}
+.footer address{font-size: 15px; line-height: 25px; letter-spacing: 1.5px;}
 
 
 
